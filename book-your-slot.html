@@ -87,16 +87,16 @@ img{max-width:100%}
 
 /* top bar */
 .topbar{background:#17130F;color:#FAF6EF}
-.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
-.logo-pill{display:inline-flex;background:#fff;border-radius:12px;padding:6px 14px}
-.logo-pill img{height:52px;width:auto;display:block}
+.topbar{border-bottom:1px solid rgba(250,246,239,.08)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:10px;padding-bottom:10px}
+.brand-logo{height:104px;width:auto;display:block;margin:-10px 0 -10px -14px}
 .topbar-note{font-size:14px;color:rgba(250,246,239,.75)}
 
 /* hero */
 .hero{background:#17130F;color:#FAF6EF;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;right:-160px;top:-120px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(232,119,46,.38),rgba(232,119,46,0) 68%)}
 .hero::after{content:"";position:absolute;left:-220px;bottom:-260px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.18),rgba(201,168,76,0) 70%)}
-.hero .wrap{position:relative;z-index:1;padding-top:52px;padding-bottom:72px}
+.hero .wrap{position:relative;z-index:1;padding-top:40px;padding-bottom:96px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center}
 .gbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(250,246,239,.1);border:1px solid rgba(250,246,239,.2);padding:8px 16px;border-radius:999px;font-size:14px;font-weight:500;text-decoration:none}
 .gbadge .stars{color:#C9A84C}
@@ -142,22 +142,25 @@ label{font-size:14px;font-weight:700}
 .btn-wa:hover{background:#3BE078;transform:translateY(-2px)}
 .btn-block{width:100%}
 
-/* trust strip */
-.trust{background:#fff;border-bottom:1px solid #E9DFD1}
-.trust .wrap{padding-top:26px;padding-bottom:26px}
+/* stats band */
 .grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
 .grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.stat{text-align:center}
-.stat strong{display:block;font:800 32px 'Bricolage Grotesque',sans-serif;color:#B25A1E}
-.stat span{font-size:14px;color:#5C4A3A}
+.stats{position:relative;z-index:2;margin-top:-44px}
+.stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.stat-card{background:#fff;border-radius:20px;padding:24px 22px;text-align:center;box-shadow:0 18px 40px rgba(23,19,15,.14);border-top:4px solid #E8772E;transition:transform .25s}
+.stat-card:hover{transform:translateY(-5px)}
+.stat-ico{width:52px;height:52px;border-radius:16px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#F7B27E,#E8772E)}
+.stat-num{font:800 44px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-0.02em;color:#17130F}
+.stat-num small{font-size:.62em;color:#E8772E;margin-left:2px;vertical-align:.18em}
+.stat-lab{margin-top:8px;font-size:14.5px;font-weight:500;color:#5C4A3A}
 
 /* sections */
 .section{padding-top:84px}
 .center{text-align:center;max-width:640px;margin:0 auto 38px}
 .magnet{display:block;text-decoration:none;background:#fff;border:1.5px solid #E9DFD1;border-radius:18px;padding:26px 22px;transition:transform .2s,box-shadow .2s,border-color .2s}
 .magnet:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(23,19,15,.1);border-color:#E8772E}
-.magnet .ico{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;font:800 20px 'Bricolage Grotesque',sans-serif;margin-bottom:16px}
+.magnet .ico{display:inline-block;border-radius:999px;padding:7px 14px;font:700 12.5px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;margin-bottom:16px}
 .magnet h3{font-size:21px;font-weight:700;line-height:1.2;margin-bottom:8px}
 .magnet p{margin:0 0 16px;font-size:15px;line-height:1.55;color:#5C4A3A}
 .magnet span.go{font-weight:700;font-size:15px;color:#B25A1E}
@@ -168,7 +171,7 @@ label{font-size:14px;font-weight:700}
 .how h3{font-size:22px;margin-bottom:8px}
 .how p{margin:0;color:rgba(250,246,239,.8);line-height:1.6;font-size:15.5px}
 
-.proof{display:block;text-decoration:none;border-radius:18px;overflow:hidden;background:#fff;border:1.5px solid #E9DFD1;transition:transform .2s,box-shadow .2s}
+.proof{display:block;border-radius:18px;overflow:hidden;background:#fff;border:1.5px solid #E9DFD1;transition:transform .2s,box-shadow .2s}
 .proof:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(23,19,15,.1)}
 .proof img{display:block;width:100%;height:190px;object-fit:cover;object-position:top;transition:transform .4s}
 .proof:hover img{transform:scale(1.03)}
@@ -176,7 +179,11 @@ label{font-size:14px;font-weight:700}
 .proof .body{padding:22px}
 .proof h3{font-size:22px;margin-bottom:6px}
 .proof p{margin:0 0 12px;color:#5C4A3A;font-size:15px;line-height:1.55}
-.proof .go{font-weight:700;color:#B25A1E;font-size:15px}
+.proof{position:relative}
+.proof-link{text-decoration:none;color:#17130F}
+.proof-link::after{content:"";position:absolute;inset:0}
+.proof-link span{color:#E8772E;margin-left:4px}
+.proof:hover .proof-link{color:#B25A1E}
 
 figure.rev{margin:0;background:#fff;border:1.5px solid #E9DFD1;border-radius:18px;padding:26px}
 figure.rev blockquote{margin:0 0 16px;font-size:16px;line-height:1.6}
@@ -206,7 +213,7 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
 
 @media (max-width:980px){
   .hero-grid{grid-template-columns:minmax(0,1fr);gap:36px}
-  .grid4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid4,.stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .grid3{grid-template-columns:minmax(0,1fr)}
   .grid2{grid-template-columns:minmax(0,1fr)}
   .how{padding:40px 26px}
@@ -220,6 +227,10 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
   .card{padding:22px 18px}
   .card h2{font-size:24px}
   .grid4{grid-template-columns:minmax(0,1fr)}
+  .stat-grid{gap:12px}
+  .stat-card{padding:18px 12px}
+  .stat-num{font-size:34px}
+  .brand-logo{height:76px;margin:-8px 0 -8px -10px}
   .topbar-note{display:none}
   .section{padding-top:60px}
   .founder{padding:28px}
@@ -236,7 +247,7 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="wrap">
-    <a class="logo-pill" href="/" aria-label="Revenue Phoenix home"><img src="/RevenuePhoenix-SEO-Assets/assets/logo-header.png" width="104" height="52" alt="Revenue Phoenix" /></a>
+    <img class="brand-logo" src="/RevenuePhoenix-SEO-Assets/assets/logo-Photoroom.png" width="1774" height="887" alt="Revenue Phoenix" fetchpriority="high" />
     <div class="topbar-note">Currently accepting new clients</div>
   </div>
 </div>
@@ -324,14 +335,30 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
   </div>
 </header>
 
-<!-- TRUST STRIP -->
-<section class="trust" aria-label="At a glance">
+<!-- STATS BAND -->
+<section class="stats" aria-label="At a glance">
   <div class="wrap">
-    <div class="grid4">
-      <div class="stat"><strong>5.0&#9733;</strong><span>Google rating</span></div>
-      <div class="stat"><strong>4</strong><span>Live client sites you can open</span></div>
-      <div class="stat"><strong>5</strong><span>Countries served</span></div>
-      <div class="stat"><strong>0</strong><span>Account managers, just the founder</span></div>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="#17130F" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.2l-5.9 3.4 1.3-6.6L2.5 9.4l6.6-.8z"/></svg></div>
+        <div class="stat-num"><span data-count="5" data-decimal="1">5.0</span><small>&#9733;</small></div>
+        <div class="stat-lab">Google rating</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#17130F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8M12 18v3"/></svg></div>
+        <div class="stat-num"><span data-count="100">100</span><small>+</small></div>
+        <div class="stat-lab">Sites worked on</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#17130F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg></div>
+        <div class="stat-num"><span data-count="5">5</span><small>+</small></div>
+        <div class="stat-lab">Countries served</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#17130F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.6-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></div>
+        <div class="stat-num">24<small>/</small>7</div>
+        <div class="stat-lab">WhatsApp support</div>
+      </div>
     </div>
   </div>
 </section>
@@ -344,25 +371,25 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
   </div>
   <div class="grid4">
     <a class="magnet" href="#get-plan" data-need="Free homepage demo">
-      <div class="ico" style="background:#F0C4A8">H</div>
+      <div class="ico" style="background:#F0C4A8">Home page demo</div>
       <h3>Free homepage demo</h3>
       <p>See a mock-up of your homepage before you commit to anything.</p>
       <span class="go">Get my demo &rarr;</span>
     </a>
     <a class="magnet" href="#get-plan" data-need="Free SEO audit">
-      <div class="ico" style="background:#C8D8C8">S</div>
+      <div class="ico" style="background:#C8D8C8">SEO</div>
       <h3>Free SEO audit</h3>
       <p>We look at your current site and tell you what is holding it back.</p>
       <span class="go">Get my audit &rarr;</span>
     </a>
     <a class="magnet" href="#get-plan" data-need="Website in 48 hours">
-      <div class="ico" style="background:#D4C5E2">48</div>
+      <div class="ico" style="background:#D4C5E2">48 hours</div>
       <h3>Website in 48 hours</h3>
       <p>Need something live fast? Ask if your project qualifies for a rush build.</p>
       <span class="go">Check my timeline &rarr;</span>
     </a>
     <a class="magnet" href="#get-plan" data-need="Google Business setup">
-      <div class="ico" style="background:#F2D9D0">G</div>
+      <div class="ico" style="background:#F2D9D0">GMB</div>
       <h3>Google Business setup</h3>
       <p>Get your Google Business Profile set up properly so local customers find you.</p>
       <span class="go">Get set up &rarr;</span>
@@ -390,22 +417,22 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
     <h2 class="sec-title">Real sites we built. Go click around.</h2>
   </div>
   <div class="grid2">
-    <a class="proof" href="https://furrishta.in" target="_blank" rel="noopener">
+    <div class="proof">
       <div class="shot"><img src="/RevenuePhoenix-SEO-Assets/assets/furrishta-screenshot.jpg" width="1200" height="499" loading="lazy" alt="Furrishta Shopify storefront built by Revenue Phoenix" /></div>
-      <div class="body"><h3>Furrishta</h3><p>Custom Shopify storefront for a pet accessories brand, built from scratch, plus packaging and inventory systems.</p><span class="go">furrishta.in &rarr;</span></div>
-    </a>
-    <a class="proof" href="https://swatipearls.in" target="_blank" rel="noopener">
+      <div class="body"><h3><a class="proof-link" href="https://furrishta.in" target="_blank" rel="noopener">Furrishta <span aria-hidden="true">&#8599;</span></a></h3><p>Custom Shopify storefront for a pet accessories brand, built from scratch, plus packaging and inventory systems.</p></div>
+    </div>
+    <div class="proof">
       <div class="shot"><img src="/RevenuePhoenix-SEO-Assets/assets/swati-pearls-screenshot.jpg" width="1200" height="487" loading="lazy" alt="Swati Pearls &amp; Jewellers website built by Revenue Phoenix" /></div>
-      <div class="body"><h3>Swati Pearls &amp; Jewellers</h3><p>Dawn theme rebuild for a jewellery brand, with WhatsApp-first checkout and a live gold/silver pricing widget.</p><span class="go">swatipearls.in &rarr;</span></div>
-    </a>
-    <a class="proof" href="https://somara-realty.netlify.app" target="_blank" rel="noopener">
+      <div class="body"><h3><a class="proof-link" href="https://swatipearls.in" target="_blank" rel="noopener">Swati Pearls &amp; Jewellers <span aria-hidden="true">&#8599;</span></a></h3><p>Dawn theme rebuild for a jewellery brand, with WhatsApp-first checkout and a live gold/silver pricing widget.</p></div>
+    </div>
+    <div class="proof">
       <div class="shot"><img src="/RevenuePhoenix-SEO-Assets/assets/somara-realty-screenshot.jpg" width="1200" height="572" loading="lazy" alt="Somara Realty Dubai real estate website built by Revenue Phoenix" /></div>
-      <div class="body"><h3>Somara Realty</h3><p>Website for a Dubai real estate brand, with live property search by location, type, budget and bedrooms, plus consultation booking.</p><span class="go">somara-realty.netlify.app &rarr;</span></div>
-    </a>
-    <a class="proof" href="https://milithpharma.netlify.app" target="_blank" rel="noopener">
+      <div class="body"><h3><a class="proof-link" href="https://somararealtyweb.netlify.app/" target="_blank" rel="noopener">Somara Realty <span aria-hidden="true">&#8599;</span></a></h3><p>Website for a Dubai real estate brand, with live property search by location, type, budget and bedrooms, plus consultation booking.</p></div>
+    </div>
+    <div class="proof">
       <div class="shot"><img src="/RevenuePhoenix-SEO-Assets/assets/milith-pharma-screenshot.jpg" width="1200" height="513" loading="lazy" alt="Milith Pharma corporate website built by Revenue Phoenix" /></div>
-      <div class="body"><h3>Milith Pharma</h3><p>Corporate website for a pan-India pharma company, with a product catalog by therapy area and a distributor onboarding flow.</p><span class="go">milithpharma.netlify.app &rarr;</span></div>
-    </a>
+      <div class="body"><h3><a class="proof-link" href="https://milithpharma.netlify.app" target="_blank" rel="noopener">Milith Pharma <span aria-hidden="true">&#8599;</span></a></h3><p>Corporate website for a pan-India pharma company, with a product catalog by therapy area and a distributor onboarding flow.</p></div>
+    </div>
   </div>
 </section>
 
@@ -542,6 +569,24 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
       fbq('track', 'Lead', { content_name: 'book-your-slot-whatsapp-cta' });
     }
   });
+
+  // Count-up numbers
+  var counters = document.querySelectorAll('[data-count]');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function run(el) {
+    var target = parseFloat(el.getAttribute('data-count')), dec = parseInt(el.getAttribute('data-decimal') || '0', 10), t0 = null;
+    function step(ts) {
+      if (!t0) t0 = ts;
+      var pr = Math.min((ts - t0) / 1300, 1), eased = 1 - Math.pow(1 - pr, 3);
+      el.textContent = (target * eased).toFixed(dec);
+      if (pr < 1) requestAnimationFrame(step); else el.textContent = target.toFixed(dec);
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window && !reduce) {
+    var cio = new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) { run(en.target); cio.unobserve(en.target); } }); }, { threshold: 0.6 });
+    for (var c = 0; c < counters.length; c++) cio.observe(counters[c]);
+  }
 
   // Scroll reveal
   var els = document.querySelectorAll('.reveal');
