@@ -1,0 +1,83 @@
+# ── 1) Force old .html URLs to the new clean URLs (301 = permanent redirect) ──
+# This is what tells Google "the real address moved" and passes SEO value along.
+/index.html                              /                                    301!
+/about.html                              /about                               301!
+/portfolio.html                          /portfolio                          301!
+/blog.html                               /blog                                301!
+/contact.html                            /contact                            301!
+/privacy.html                            /privacy                            301!
+/terms.html                              /terms                              301!
+/refund.html                             /refund                             301!
+/blog-freelancer-vs-agency.html          /blog/freelancer-vs-agency          301!
+/blog-shopify-seo-checklist.html         /blog/shopify-seo-checklist         301!
+/blog-shopify-store-cost.html            /blog/shopify-store-cost            301!
+/book-your-slot.html                     /book-your-slot                     301!
+/blog-shopify-traffic-no-sales.html      /blog/shopify-traffic-no-sales      301!
+/digital-marketing-agency-india.html     /digital-marketing-agency-india     301!
+/digital-marketing-agency-canada.html    /digital-marketing-agency-canada    301!
+/digital-marketing-agency-uae.html       /digital-marketing-agency-uae       301!
+/digital-marketing-agency-usa.html       /digital-marketing-agency-usa       301!
+/digital-marketing-agency-australia.html /digital-marketing-agency-australia 301!
+
+# ── 2) Serve the clean URLs from the actual .html files (200 = invisible rewrite) ──
+# The visitor's address bar keeps showing the clean URL; Netlify quietly serves
+# the matching file behind the scenes.
+/about                                   /about.html                          200
+/portfolio                               /portfolio.html                      200
+/blog                                    /blog.html                           200
+/contact                                 /contact.html                        200
+/privacy                                 /privacy.html                        200
+/terms                                   /terms.html                          200
+/refund                                  /refund.html                         200
+/blog/freelancer-vs-agency               /blog-freelancer-vs-agency.html      200
+/blog/shopify-seo-checklist              /blog-shopify-seo-checklist.html     200
+/blog/shopify-store-cost                 /blog-shopify-store-cost.html        200
+/blog/shopify-traffic-no-sales           /blog-shopify-traffic-no-sales.html  200
+/blog/shopify-homepage-mistakes          /blog-shopify-homepage-mistakes.html 200
+/blog/brand-voice-vs-logo                /blog-brand-voice-vs-logo.html       200
+/blog/dtc-email-sequence                 /blog-dtc-email-sequence.html        200
+/blog/product-page-anatomy               /blog-product-page-anatomy.html      200
+/blog/hire-agencies-for-outcomes         /blog-hire-agencies-for-outcomes.html 200
+/book-your-slot                          /book-your-slot.html                 200
+/blog/coffee-brand-case-study            /blog-coffee-brand-case-study.html   200
+
+/blog/shopify-store-cost-india               /blog-shopify-store-cost-india.html  200
+/blog/social-media-management-pricing-india  /blog-social-media-management-pricing-india.html  200
+/blog/shopify-agency-canada-small-brands     /blog-shopify-agency-canada-small-brands.html  200
+/blog/social-media-management-pricing-canada /blog-social-media-management-pricing-canada.html  200
+/blog/website-development-dubai-real-estate  /blog-website-development-dubai-real-estate.html  200
+/blog/shopify-social-media-cost-uae          /blog-shopify-social-media-cost-uae.html  200
+/blog/shopify-agency-us-dtc-startups         /blog-shopify-agency-us-dtc-startups.html  200
+/blog/social-media-management-us-small-brands /blog-social-media-management-us-small-brands.html  200
+/blog/shopify-agency-australian-small-business /blog-shopify-agency-australian-small-business.html  200
+/blog/social-media-marketing-pricing-australia /blog-social-media-marketing-pricing-australia.html  200
+
+/blog/swati-pearls-jewellers-shopify-case-study  /blog-swati-pearls-jewellers-shopify-case-study.html  200
+/blog/furrishta-shopify-case-study                /blog-furrishta-shopify-case-study.html                200
+/blog/somara-realty-case-study                    /blog-somara-realty-case-study.html                    200
+/blog/milith-pharma-case-study                     /blog-milith-pharma-case-study.html                    200
+
+/blog/shopify-website-development-company      /blog-shopify-website-development-company.html  200
+/blog/social-media-management-packages         /blog-social-media-management-packages.html  200
+/blog/brand-identity-design-ecommerce          /blog-brand-identity-design-ecommerce.html  200
+/blog/meta-ads-management-shopify              /blog-meta-ads-management-shopify.html  200
+
+/blog/shopify-seo-services                     /blog-shopify-seo-services.html  200
+/blog/shopify-store-audit                      /blog-shopify-store-audit.html  200
+/blog/conversion-rate-optimization-agency      /blog-conversion-rate-optimization-agency.html  200
+/blog/whatsapp-marketing-agency                /blog-whatsapp-marketing-agency.html  200
+/blog/shopify-migration-services               /blog-shopify-migration-services.html  200
+/blog/instagram-growth-agency                  /blog-instagram-growth-agency.html  200
+/blog/small-business-website-design-agency     /blog-small-business-website-design-agency.html  200
+/blog/ecommerce-email-marketing-agency         /blog-ecommerce-email-marketing-agency.html  200
+/blog/shopify-plus-development-agency          /blog-shopify-plus-development-agency.html  200
+
+# ── Market landing pages ──
+/digital-marketing-agency-india          /digital-marketing-agency-india.html       200
+/digital-marketing-agency-canada         /digital-marketing-agency-canada.html      200
+/digital-marketing-agency-uae            /digital-marketing-agency-uae.html         200
+/digital-marketing-agency-usa            /digital-marketing-agency-usa.html         200
+/digital-marketing-agency-australia      /digital-marketing-agency-australia.html   200
+
+# ── 3) Custom 404 page ──
+/*                                        /404.html                          404
