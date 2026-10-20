@@ -9,7 +9,6 @@
   gtag('js', new Date());
 
   gtag('config', 'G-C6VY91Z3WS');
-  gtag('config', 'AW-18521780934', { allow_enhanced_conversions: true });
 </script>
 <!-- Meta Pixel Code -->
 <script>
@@ -297,7 +296,7 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
         <p class="hero-sub">Answer 4 quick questions. The founder replies personally on WhatsApp with a straight answer and a real price, usually the same day.</p>
         <ul class="ticks">
           <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8772E"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#17130F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Free homepage mock-up before you commit to anything</li>
-          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8772E"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#17130F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span id="price-tick">Projects from &#8377;20,000, with a real quote from the founder</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8772E"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#17130F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>A real number for your project, not a "starting from" price</li>
           <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#E8772E"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#17130F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>No lock-in contracts, no ticket system, no sales rep</li>
         </ul>
       </div>
@@ -318,8 +317,6 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
           <input type="hidden" name="utm_source" id="f-utm-source" value="" />
           <input type="hidden" name="utm_medium" id="f-utm-medium" value="" />
           <input type="hidden" name="utm_campaign" id="f-utm-campaign" value="" />
-          <input type="hidden" name="utm_term" id="f-utm-term" value="" />
-          <input type="hidden" name="gclid" id="f-gclid" value="" />
           <input type="hidden" name="referrer" id="f-referrer" value="" />
           <input type="hidden" name="country" id="f-country" value="" />
           <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
@@ -534,7 +531,7 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
 <section class="final">
   <div class="wrap">
     <h2>Ready for a site that <em>earns its keep</em>?</h2>
-    <p>Under a minute, four questions, one straight answer from the founder.</p>
+    <p>Thirty seconds, three questions, one straight answer from the founder.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
       <a class="btn-main" href="#get-plan" style="font-size:17px;padding:18px 32px">Get my free starter plan</a>
       <a class="btn-wa" href="https://wa.me/918218690055?text=Hi%20Revenue%20Phoenix%2C%20I%20need%20help%20with%20my%20website%20%2F%20social%20media." target="_blank" rel="noopener" style="font-size:17px;padding:18px 32px">Chat on WhatsApp</a>
@@ -565,30 +562,13 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
   var SHEET_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwQcUcexvvqGm0sB7XWZMHIOaXaCDPxvUm1MLX6NRJ7FM5ogo5KT97aJbGdj01WtZjo/exec';
 
   // Capture ad attribution so you can see which campaign each lead came from
-  // (values are kept for the visit, so a page reload doesn't lose the Google click ID)
   try {
     var qs = new URLSearchParams(location.search);
-    var keep = function (key, val) {
-      try {
-        if (val) { sessionStorage.setItem('rp_' + key, val); return val; }
-        return sessionStorage.getItem('rp_' + key) || '';
-      } catch (x) { return val || ''; }
-    };
-    document.getElementById('f-utm-source').value = keep('utm_source', qs.get('utm_source'));
-    document.getElementById('f-utm-medium').value = keep('utm_medium', qs.get('utm_medium'));
-    document.getElementById('f-utm-campaign').value = keep('utm_campaign', qs.get('utm_campaign'));
-    document.getElementById('f-utm-term').value = keep('utm_term', qs.get('utm_term'));
-    document.getElementById('f-gclid').value = keep('gclid', qs.get('gclid') || qs.get('gbraid') || qs.get('wbraid'));
+    document.getElementById('f-utm-source').value = qs.get('utm_source') || '';
+    document.getElementById('f-utm-medium').value = qs.get('utm_medium') || '';
+    document.getElementById('f-utm-campaign').value = qs.get('utm_campaign') || '';
     document.getElementById('f-referrer').value = document.referrer || '';
   } catch (x) {}
-
-  // Google Ads conversion actions (Goals > Conversions)
-  var AW_ID = 'AW-18521780934';
-  var AW_LEAD_QUALIFIED = AW_ID + '/xBghCMKKmaIdEMbl7_9E';   // primary
-  var AW_LEAD_NOT_SURE  = AW_ID + '/1KSeCK_RmaIdEMbl7_9E';   // secondary
-  var AW_WHATSAPP_CLICK = AW_ID + '/TL8uCM6KmKIdEMbl7_9E';   // secondary
-  // Value by budget chip position (1st, 2nd, 3rd) so INR, USD and AED ranges all map the same way
-  var BUDGET_VALUES = [35000, 75000, 125000];
 
   // Phone field with country selector (auto-picks the dial code)
   var phoneEl = document.getElementById('f-phone'), iti = null;
@@ -620,14 +600,10 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
     if (tz === 'Asia/Calcutta' || tz === 'Asia/Kolkata') return;
     var show = ['$500 to $1,000', '$1,000 to $2,500', '$2,500 and above'];
     var val = ['$500 to $1,000', '$1,000 to $2,500', '$2,500+'];
-    var from = '$500';
     if (tz === 'Asia/Dubai') {
       show = ['AED 2,000 to 4,000', 'AED 4,000 to 10,000', 'AED 10,000 and above'];
       val = ['AED 2,000 to 4,000', 'AED 4,000 to 10,000', 'AED 10,000+'];
-      from = 'AED 2,000';
     }
-    var pt = document.getElementById('price-tick');
-    if (pt) pt.textContent = 'Projects from ' + from + ', with a real quote from the founder';
     var chips = document.querySelectorAll('#budget-chips .chip');
     for (var i = 0; i < show.length && i < chips.length; i++) { chips[i].setAttribute('data-budget', val[i]); chips[i].textContent = show[i]; }
   })();
@@ -666,6 +642,23 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
     });
   }
 
+  // Rejects obvious fake numbers: repeated digits, long 1-2-3-4 runs, only two distinct digits, many trailing zeros
+  function looksFake(n) {
+    if (!n) return true;
+    if (/(\d)\1{5,}/.test(n)) return true;
+    if (/0{5,}$/.test(n)) return true;
+    var distinct = {}, count = 0;
+    for (var i = 0; i < n.length; i++) { if (!distinct[n.charAt(i)]) { distinct[n.charAt(i)] = 1; count++; } }
+    if (count <= 2) return true;
+    var up = 1, down = 1;
+    for (var j = 1; j < n.length; j++) {
+      var d = n.charCodeAt(j) - n.charCodeAt(j - 1);
+      up = (d === 1) ? up + 1 : 1; down = (d === -1) ? down + 1 : 1;
+      if (up >= 6 || down >= 6) return true;
+    }
+    return false;
+  }
+
   // Submit: save to Google Sheet + Netlify Forms, track, show thank-you
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -674,18 +667,28 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
     var err = document.getElementById('f-err');
     var fullPhone = '', countryName = '';
     if (!name) { err.textContent = 'Please add your name.'; return; }
+    var badPhone = 'That number does not look real. Please enter your own mobile number so we can reach you on WhatsApp.';
     if (iti) {
       var raw = phoneEl.value.trim();
       var valid = iti.isValidNumber();   // null until the formatting library has loaded
       var cd = iti.getSelectedCountryData();
       var digits = raw.replace(/[^0-9]/g, '');
       if (!raw || valid === false || (valid === null && (digits.length < 6 || digits.length > 14))) { err.textContent = 'Please enter a valid phone number for ' + (cd.name || 'your country') + '.'; return; }
+      var natDigits = digits.replace(/^0+/, '');
+      if (looksFake(natDigits)) { err.textContent = badPhone; return; }
+      try {
+        if (valid && window.intlTelInputUtils) {
+          var ty = iti.getNumberType();   // 0 landline, 3 toll-free, 4 premium, 5 shared-cost
+          if (ty === 0 || ty === 3 || ty === 4 || ty === 5) { err.textContent = 'Please enter a mobile number (not a landline) so we can message you on WhatsApp.'; return; }
+        }
+      } catch (x) {}
       fullPhone = iti.getNumber();
-      if (!fullPhone || fullPhone.charAt(0) !== '+') fullPhone = '+' + cd.dialCode + digits.replace(/^0+/, '');
+      if (!fullPhone || fullPhone.charAt(0) !== '+') fullPhone = '+' + cd.dialCode + natDigits;
       countryName = cd.name || '';
     } else {
       var d2 = phoneEl.value.replace(/[^0-9]/g, '');
       if (d2.length < 8 || d2.length > 15) { err.textContent = 'Please enter your phone number with country code, for example +91 98765 43210.'; return; }
+      if (looksFake(d2.replace(/^0+/, ''))) { err.textContent = badPhone; return; }
       fullPhone = phoneEl.value.trim();
     }
     if (email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { err.textContent = 'That email does not look right. Fix it or leave it empty.'; return; }
@@ -719,42 +722,18 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
       document.getElementById('progress').hidden = true;
       document.getElementById('done').hidden = false;
       try { if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: 'book-your-slot-form', content_category: fd.get('need') }); } catch (x) {}
-      // Google Ads: qualified budget -> primary conversion with value; "Not sure yet" -> secondary
-      var leadValue = 0;
-      try {
-        if (typeof gtag === 'function') {
-          var ud = { phone_number: phone };
-          if (email) ud.email = email.toLowerCase();
-          gtag('set', 'user_data', ud);   // enhanced conversions
-          var chips = document.querySelectorAll('#budget-chips .chip');
-          var tier = -1;
-          for (var b = 0; b < chips.length; b++) { if (chips[b].getAttribute('data-budget') === fd.get('budget')) tier = b; }
-          var tid = 'rp-' + Date.now();
-          if (tier >= 0 && tier < BUDGET_VALUES.length) {
-            leadValue = BUDGET_VALUES[tier];
-            gtag('event', 'conversion', { send_to: AW_LEAD_QUALIFIED, value: leadValue, currency: 'INR', transaction_id: tid });
-          } else if (fd.get('budget') === 'Not sure yet') {
-            gtag('event', 'conversion', { send_to: AW_LEAD_NOT_SURE, value: 10000, currency: 'INR', transaction_id: tid });
-          }
-        }
-      } catch (x) {}
-      try { if (typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'book-your-slot', event_label: fd.get('need'), budget: fd.get('budget'), value: leadValue, currency: 'INR' }); } catch (x) {}
+      try { if (typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'book-your-slot', event_label: fd.get('need') }); } catch (x) {}
     };
     Promise.all(jobs.map(function (p) { return p.catch(function () {}); })).then(finish);
     setTimeout(finish, 5000);
   });
 
-  // Meta Pixel + Google Ads: direct WhatsApp clicks (not the post-form hand-off, which is already counted)
+  // Meta Pixel: Lead on direct WhatsApp clicks (not the post-form hand-off, which is already counted)
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href*="wa.me/"]');
-    if (!link || link.hasAttribute('data-nolead')) return;
-    try { if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: 'book-your-slot-whatsapp-cta' }); } catch (x) {}
-    try {
-      if (typeof gtag === 'function') {
-        gtag('event', 'conversion', { send_to: AW_WHATSAPP_CLICK, value: 5000, currency: 'INR' });
-        gtag('event', 'whatsapp_click', { button_text: (link.textContent || '').trim().slice(0, 40) });
-      }
-    } catch (x) {}
+    if (link && !link.hasAttribute('data-nolead') && typeof fbq === 'function') {
+      fbq('track', 'Lead', { content_name: 'book-your-slot-whatsapp-cta' });
+    }
   });
 
   // Reviews: auto-scrolling marquee on desktop (swipeable row on mobile)
