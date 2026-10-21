@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thank You | Revenue Phoenix</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" type="image/png" sizes="32x32" href="/RevenuePhoenix-SEO-Assets/assets/favicon-32x32.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<!-- Read the lead details saved by the form (nothing personal goes in the URL) -->
+<script>
+  var RP_LEAD = null;
+  try {
+    RP_LEAD = JSON.parse(sessionStorage.getItem('rp_lead') || 'null');
+    sessionStorage.removeItem('rp_lead'); // refresh / revisit will NOT count again
+  } catch (x) {}
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6VY91Z3WS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C6VY91Z3WS');
+  if (RP_LEAD) gtag('event', 'generate_lead', { event_category: 'book-your-slot', event_label: RP_LEAD.need || '' });
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4032301110237213');
+fbq('track', 'PageView');
+// Lead fires only for a real form submission (not direct visits or refreshes)
+if (RP_LEAD) fbq('track', 'Lead', { content_name: 'book-your-slot-form', content_category: RP_LEAD.need || '' }, { eventID: RP_LEAD.id });
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4032301110237213&ev=PageView&noscript=1" /></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;font-family:'DM Sans',sans-serif;background:#17130F;color:#FAF6EF;-webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden}
+body::before{content:"";position:absolute;right:-160px;top:-120px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(232,119,46,.35),rgba(232,119,46,0) 68%);pointer-events:none}
+.top{padding:10px 28px}
+.top img{height:90px;width:auto;display:block;margin:-6px 0 -6px -12px}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:24px 18px 60px;position:relative;z-index:1}
+.card{background:#FAF6EF;color:#17130F;border-radius:24px;padding:40px 32px;max-width:520px;width:100%;text-align:center;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+h1{font-family:'Bricolage Grotesque',sans-serif;font-size:34px;line-height:1.1;font-weight:800;letter-spacing:-0.02em;margin:18px 0 10px}
+p{margin:0 0 22px;color:#5C4A3A;font-size:16.5px;line-height:1.55}
+.steps{text-align:left;background:#fff;border:1.5px solid #E9DFD1;border-radius:14px;padding:16px 20px;margin:0 0 24px;font-size:15px;line-height:1.7;color:#17130F}
+.steps b{color:#B25A1E}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;border-radius:14px;padding:16px 22px;font:700 16px 'DM Sans',sans-serif;text-decoration:none;min-height:48px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.wa{background:#25D366;color:#17130F;margin-bottom:12px}
+.ghost{border:1.5px solid #17130F;color:#17130F}
+.ghost:hover{background:#17130F;color:#FAF6EF}
+footer{text-align:center;padding:20px;font-size:13px;color:rgba(250,246,239,.6);position:relative;z-index:1}
+footer a{color:inherit}
+@media (max-width:620px){.card{padding:30px 20px}h1{font-size:28px}.top img{height:70px}}
+</style>
+</head>
+<body>
+<div class="top"><a href="/"><img src="/RevenuePhoenix-SEO-Assets/assets/logo-Photoroom.png" alt="Revenue Phoenix" /></a></div>
+
+<main>
+  <div class="card">
+    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#3A5C4A"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <h1>Thanks, <span id="t-name">there</span>. We got it.</h1>
+    <p id="t-msg">Priyanshi will message you on WhatsApp, usually within a few hours.</p>
+    <div class="steps">
+      <b>What happens next</b><br>
+      1. We review what you shared<br>
+      2. You get a straight answer and a real price on WhatsApp<br>
+      3. If it is a fit, we start building
+    </div>
+    <a class="btn wa" id="t-wa" data-nolead href="https://wa.me/918218690055" target="_blank" rel="noopener">Want to talk sooner? Message us now</a>
+    <a class="btn ghost" href="/">Back to the website</a>
+  </div>
+</main>
+
+<footer>&copy; 2026 Revenue Phoenix &middot; <a href="/">revenuephoenix.com</a></footer>
+
+<script>
+(function () {
+  if (!RP_LEAD) return;
+  if (RP_LEAD.name) document.getElementById('t-name').textContent = RP_LEAD.name.split(' ')[0];
+  if (RP_LEAD.phone) document.getElementById('t-msg').innerHTML = 'Priyanshi will message you on WhatsApp at <b></b>, usually within a few hours.';
+  if (RP_LEAD.phone) document.querySelector('#t-msg b').textContent = RP_LEAD.phone;
+  var msg = 'Hi Revenue Phoenix, I am ' + (RP_LEAD.name || '') + '. I just submitted the form: ' + (RP_LEAD.need || '') + '. Timeline: ' + (RP_LEAD.timeline || '') + '. Budget: ' + (RP_LEAD.budget || '') + '.';
+  document.getElementById('t-wa').href = 'https://wa.me/918218690055?text=' + encodeURIComponent(msg);
+})();
+</script>
+</body>
+</html>
