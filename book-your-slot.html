@@ -712,29 +712,34 @@ footer.mini{background:#0F0C0A;color:rgba(250,246,239,.65);text-align:center;pad
     }
 
     var finished = false;
-    var finish = function () {
-      if (finished) return; finished = true;
-      document.getElementById('done-name').textContent = name.split(' ')[0];
-      document.getElementById('done-phone').textContent = phone;
-      var msg = 'Hi Revenue Phoenix, I am ' + name + '. I just submitted the form: ' + fd.get('need') + '. Timeline: ' + fd.get('timeline') + '. Budget: ' + fd.get('budget') + '.';
-      document.getElementById('wa-final').href = 'https://wa.me/918218690055?text=' + encodeURIComponent(msg);
-      form.hidden = true;
-      document.getElementById('progress').hidden = true;
-      document.getElementById('done').hidden = false;
-      try { if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: 'book-your-slot-form', content_category: fd.get('need') }); } catch (x) {}
-      try { if (typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'book-your-slot', event_label: fd.get('need') }); } catch (x) {}
-    };
+var finish = function () {
+  if (finished) return; finished = true;
+  try {
+    sessionStorage.setItem('rp_lead', JSON.stringify({
+      id: 'lead_' + Date.now(),
+      name: name, phone: phone,
+      need: fd.get('need'), timeline: fd.get('timeline'), budget: fd.get('budget')
+    }));
+  } catch (x) {}
+  window.location.href = '/thank-you';
+};
     Promise.all(jobs.map(function (p) { return p.catch(function () {}); })).then(finish);
     setTimeout(finish, 5000);
   });
 
   // Meta Pixel: Lead on direct WhatsApp clicks (not the post-form hand-off, which is already counted)
+  // document.addEventListener('click', function (e) {
+  //   var link = e.target.closest('a[href*="wa.me/"]');
+  //   if (link && !link.hasAttribute('data-nolead') && typeof fbq === 'function') {
+  //     fbq('track', 'Lead', { content_name: 'book-your-slot-whatsapp-cta' });
+  //   }
+  // });
   document.addEventListener('click', function (e) {
-    var link = e.target.closest('a[href*="wa.me/"]');
-    if (link && !link.hasAttribute('data-nolead') && typeof fbq === 'function') {
-      fbq('track', 'Lead', { content_name: 'book-your-slot-whatsapp-cta' });
-    }
-  });
+  var link = e.target.closest('a[href*="wa.me/"]');
+  if (!link || link.hasAttribute('data-nolead')) return;
+  try { if (typeof fbq === 'function') fbq('track', 'Contact', { content_name: 'whatsapp-click' }); } catch (x) {}
+  try { if (typeof gtag === 'function') gtag('event', 'whatsapp_click', { event_category: 'book-your-slot' }); } catch (x) {}
+});
 
   // Reviews: auto-scrolling marquee on desktop (swipeable row on mobile)
   (function () {
