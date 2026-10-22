@@ -156,19 +156,32 @@
     if(!fine||REDUCE)return;
     var cur=$('#cur'),ring=$('#curring'),lab=$('#curlab');if(!cur||!ring)return;
     document.documentElement.classList.add('has-cur');
-    var mx=-100,my=-100,rx=-100,ry=-100,seen=false;
+    var mx=-100,my=-100,rx=-100,ry=-100,seen=false,running=false;
     var LAB=[['.ba','Drag'],['.card','Explore'],['.post','Read'],['.feat','Read'],['.proj','Visit'],['.pbig','Visit'],['.ctry','Open'],['.mem','Hi!'],['.reel','Watch']];
     var INT='a,button,[role=slider],.fbtn,label,summary';
-    (function frame(){rx+=(mx-rx)*.2;ry+=(my-ry)*.2;cur.style.transform='translate3d('+mx+'px,'+my+'px,0)';ring.style.transform='translate3d('+rx+'px,'+ry+'px,0)';requestAnimationFrame(frame)})();
-    document.addEventListener('mousemove',function(e){
-      mx=e.clientX;my=e.clientY;
-      if(!seen){seen=true;rx=mx;ry=my;cur.classList.add('show');ring.classList.add('show')}
-      var t=e.target,txt=t.closest&&t.closest('input,textarea,select');
+    var lastT=null,lastLab='';
+    function frame(){
+      /* the spark follows the pointer exactly; only the ring eases behind it */
+      rx+=(mx-rx)*.38;ry+=(my-ry)*.38;
+      cur.style.transform='translate3d('+mx+'px,'+my+'px,0)';
+      ring.style.transform='translate3d('+rx+'px,'+ry+'px,0)';
+      if(Math.abs(mx-rx)>.3||Math.abs(my-ry)>.3){requestAnimationFrame(frame)}else{running=false}
+    }
+    function kick(){if(!running){running=true;requestAnimationFrame(frame)}}
+    /* the expensive element lookups only run when the pointer enters a different element */
+    document.addEventListener('mouseover',function(e){
+      var t=e.target;if(t===lastT)return;lastT=t;
+      var txt=t.closest&&t.closest('input,textarea,select');
       cur.classList.toggle('hide',!!txt);ring.classList.toggle('hide',!!txt);
       var l='';for(var i=0;i<LAB.length;i++){if(t.closest&&t.closest(LAB[i][0])){l=LAB[i][1];break}}
       var hov=!!(t.closest&&t.closest(INT));
       ring.classList.toggle('lab',!!l);ring.classList.toggle('hov',hov&&!l);cur.classList.toggle('lab-on',!!l);
-      if(lab&&lab.textContent!==l)lab.textContent=l;
+      if(l!==lastLab){lastLab=l;lab.textContent=l}
+    },{passive:true});
+    document.addEventListener('mousemove',function(e){
+      mx=e.clientX;my=e.clientY;
+      if(!seen){seen=true;rx=mx;ry=my;cur.classList.add('show');ring.classList.add('show')}
+      kick();
     },{passive:true});
     document.addEventListener('mousedown',function(){cur.classList.add('down');ring.classList.add('down')});
     document.addEventListener('mouseup',function(){cur.classList.remove('down');ring.classList.remove('down')});
