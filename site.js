@@ -76,7 +76,7 @@
   })();
 
   /* ---------- scroll reveal + count-up ---------- */
-  var RV_SEL='.head-row,.proj,.pbig,.row,.rev,.ctry,.fq,.post,.val,.step,.fact,.pt,.founder,.feat,.ptx,.cc,.form,.cta-box,.kw-g,.mem,.person,.stat,.story > *,.live,.reel';
+  var RV_SEL='.head-row,.proj,.pbig,.row,.rev,.ctry,.fq,.post,.val,.step,.fact,.pt,.founder,.feat,.ptx,.cc,.form,.cta-box,.kw-g,.mem,.person,.stat,.story > *,.live,.reel,.tk';
   var io=null,cio=null;
   try{io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('pre');x.target.classList.add('in-v');io.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -5% 0px'})}catch(e){}
   try{cio=new IntersectionObserver(function(en){en.forEach(function(x){if(!x.isIntersecting)return;cio.unobserve(x.target);
@@ -184,6 +184,7 @@
     });
     document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
   })();
+
 
   /* ---------- cursor + spark bursts ---------- */
   (function(){
