@@ -79,5 +79,25 @@
 /digital-marketing-agency-usa            /digital-marketing-agency-usa.html         200
 /digital-marketing-agency-australia      /digital-marketing-agency-australia.html   200
 
+# ── Service and city landing pages ──
+/services/website-design                         /service-website-design.html                         200
+/services/shopify-development                    /service-shopify-development.html                    200
+/services/meta-ads                               /service-meta-ads.html                               200
+/services/social-media-management                /service-social-media-management.html                200
+/services/seo                                    /service-seo.html                                    200
+/services/brand-strategy                         /service-brand-strategy.html                         200
+/digital-marketing-agency-agra                   /digital-marketing-agency-agra.html                  200
+/digital-marketing-agency-delhi-ncr              /digital-marketing-agency-delhi-ncr.html             200
+/digital-marketing-agency-mumbai                 /digital-marketing-agency-mumbai.html                200
+/digital-marketing-agency-pune                   /digital-marketing-agency-pune.html                  200
+/digital-marketing-agency-bengaluru              /digital-marketing-agency-bengaluru.html             200
+/digital-marketing-agency-hyderabad              /digital-marketing-agency-hyderabad.html             200
+/digital-marketing-agency-chennai                /digital-marketing-agency-chennai.html               200
+/digital-marketing-agency-kolkata                /digital-marketing-agency-kolkata.html               200
+/digital-marketing-agency-ahmedabad              /digital-marketing-agency-ahmedabad.html             200
+/digital-marketing-agency-jaipur                 /digital-marketing-agency-jaipur.html                200
+/digital-marketing-agency-lucknow                /digital-marketing-agency-lucknow.html               200
+/digital-marketing-agency-chandigarh             /digital-marketing-agency-chandigarh.html            200
+
 # ── 3) Custom 404 page ──
 /*                                        /404.html                          404
