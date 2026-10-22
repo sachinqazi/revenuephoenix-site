@@ -242,3 +242,52 @@
     document.addEventListener('mouseenter',function(){if(seen){cur.classList.add('show');ring.classList.add('show')}});
   })();
 })();
+
+/* hero cards: drag with mouse, swipe with finger, keeps gently auto-scrolling */
+(function(){
+  var st=document.getElementById('strip'),inn=document.getElementById('strip-in');
+  if(!st||!inn)return;
+  st.classList.add('drag');
+  var half=0,paused=false,resume=0,last=0,pos=0,down=false,sx=0,lx=0,sl=0,moved=0;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function measure(){half=inn.scrollWidth/2}
+  function wrap(){
+    if(!half)return;
+    if(st.scrollLeft>=half){st.scrollLeft-=half;pos=st.scrollLeft}
+    else if(st.scrollLeft<=0){st.scrollLeft+=half;pos=st.scrollLeft}
+  }
+  function hold(ms){paused=true;clearTimeout(resume);resume=setTimeout(function(){pos=st.scrollLeft;paused=false},ms)}
+  function tick(t){
+    if(!last)last=t;var dt=Math.min(64,t-last);last=t;
+    if(!paused&&!down&&!reduce&&half){pos+=half/75000*dt;st.scrollLeft=pos;wrap()}
+    requestAnimationFrame(tick);
+  }
+  measure();window.addEventListener('resize',measure);window.addEventListener('load',function(){measure()});
+  measure();st.scrollLeft=Math.round(half*0.5)||1;pos=st.scrollLeft;
+  st.addEventListener('scroll',function(){wrap()},{passive:true});
+  /* mouse drag */
+  st.addEventListener('pointerdown',function(e){
+    if(e.pointerType!=='mouse'||e.button!==0)return;
+    down=true;moved=0;sx=e.clientX;lx=e.clientX;sl=st.scrollLeft;
+  });
+  window.addEventListener('pointermove',function(e){
+    if(!down)return;var dx=e.clientX-sx;moved=Math.max(moved,Math.abs(dx));
+    if(moved>5)st.classList.add('dragging');
+    st.scrollLeft+=(lx-e.clientX);lx=e.clientX;wrap();
+  });
+  function up(){
+    if(!down)return;down=false;
+    var was=moved>5;
+    setTimeout(function(){st.classList.remove('dragging')},0);
+    pos=st.scrollLeft;hold(was?1800:0);
+  }
+  window.addEventListener('pointerup',up);window.addEventListener('pointercancel',up);
+  st.addEventListener('dragstart',function(e){e.preventDefault()});
+  /* hover pauses, touch pauses while the finger is on it and a little after */
+  st.addEventListener('mouseenter',function(){paused=true;clearTimeout(resume)});
+  st.addEventListener('mouseleave',function(){if(!down)hold(300)});
+  st.addEventListener('touchstart',function(){hold(1e9)},{passive:true});
+  st.addEventListener('touchend',function(){hold(2500)},{passive:true});
+  st.addEventListener('wheel',function(){hold(1500)},{passive:true});
+  requestAnimationFrame(tick);
+})();

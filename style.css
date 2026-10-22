@@ -692,3 +692,25 @@ a.gbadge:hover{transform:translateY(-2px)}
 .rm-ig{background:var(--cream)}
 .rm-open,.rm-open body{overflow:hidden}
 .reel .rc video{display:block;width:100%;height:100%;object-fit:cover}
+
+/* clients logo strip */
+.clients .in{max-width:1100px}
+.cl-rows{margin-top:clamp(26px,3.5vw,40px);overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.cl-row{display:flex;gap:18px;width:max-content;margin-bottom:18px}
+.cl-row.a{animation:clL 90s linear infinite}.cl-row.b{animation:clR 90s linear infinite}
+.cl-rows:hover .cl-row{animation-play-state:paused}
+@keyframes clL{to{transform:translateX(-50%)}}@keyframes clR{from{transform:translateX(-50%)}to{transform:none}}
+.cl{width:210px;height:108px;flex:none;background:#fff;border:1.5px solid rgba(23,19,15,.12);border-radius:20px;display:flex;align-items:center;justify-content:center;padding:14px 18px}
+.cl img{display:block;max-width:150px;max-height:62px;width:auto;height:auto;object-fit:contain}
+.cl .cl-tx{font:400 26px/1.1 'Instrument Serif',Georgia,serif;letter-spacing:.22em;text-align:center;color:#3b2f22}.cl .cl-tx small{display:block;font-size:14px;letter-spacing:.5em;margin-top:6px}
+@media(max-width:640px){.cl{width:152px;height:82px;padding:10px 12px;border-radius:16px}.cl img{max-width:112px;max-height:46px}.cl .cl-tx{font-size:19px}.cl .cl-tx small{font-size:11px}.cl-row{gap:12px;margin-bottom:12px}.cl-row.a,.cl-row.b{animation-duration:66s}}
+@media (prefers-reduced-motion:reduce){.cl-rows{overflow-x:auto;-webkit-mask-image:none;mask-image:none}}
+/* hero flags */
+.markets .chip[data-c]{display:inline-flex;align-items:center;gap:7px}
+.fl{width:18px;height:18px;flex:none;border-radius:50%;box-shadow:0 0 0 1px rgba(23,19,15,.18)}
+/* hero strip drag / swipe */
+.strip.drag{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;-webkit-overflow-scrolling:touch}
+.strip.drag::-webkit-scrollbar{display:none}
+.strip.drag .strip-in{animation:none}
+.strip.drag a{-webkit-user-drag:none;user-select:none}
+.strip.dragging{cursor:grabbing}.strip.dragging a{pointer-events:none}
