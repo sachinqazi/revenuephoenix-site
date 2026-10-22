@@ -3,7 +3,7 @@
 > Revenue Phoenix is a founder-led website design, Shopify/WordPress development, and social media management agency based in Agra, India, serving e-commerce and service brands across India, the USA, Canada, the UAE, and Australia. Core services: website & Shopify development, social media handling, and brand strategy. Shopify development packages start at $800, brand strategy starts at $500, with combo packages available. Direct WhatsApp contact: +91 8218690055.
 
 ## Company
-- [Homepage](https://revenuephoenix.com/): Services, pricing, process, and client testimonials.
+- [Homepage](https://revenuephoenix.com/): Services, pricing, process, and FAQs.
 - [About Us](https://revenuephoenix.com/about): Company background, values, and founder profile (Priyanshi Agarwal).
 - [Portfolio](https://revenuephoenix.com/portfolio): Past Shopify and brand strategy projects.
 - [Contact](https://revenuephoenix.com/contact): Contact form and WhatsApp direct line.
@@ -25,7 +25,7 @@
 - [Shopify Agency for Small Canadian Brands](https://revenuephoenix.com/blog/shopify-agency-canada-small-brands)
 - [Social Media Management Pricing in Canada](https://revenuephoenix.com/blog/social-media-management-pricing-canada)
 - [Website Development for Dubai Real Estate](https://revenuephoenix.com/blog/website-development-dubai-real-estate)
-- [Shopify & Social Media Costs – UAE](https://revenuephoenix.com/blog/shopify-social-media-cost-uae)
+- [Shopify & Social Media Costs - UAE](https://revenuephoenix.com/blog/shopify-social-media-cost-uae)
 - [An Affordable Shopify Agency for US D2C Startups](https://revenuephoenix.com/blog/shopify-agency-us-dtc-startups)
 - [Social Media Management for Small US Brands](https://revenuephoenix.com/blog/social-media-management-us-small-brands)
 - [A Shopify Agency Built for Australian Small Business](https://revenuephoenix.com/blog/shopify-agency-australian-small-business)
@@ -50,13 +50,35 @@
 - [Shopify Plus Development Agency](https://revenuephoenix.com/blog/shopify-plus-development-agency)
 
 ## Markets We Serve
-- [Website Design & Social Media Agency – India](https://revenuephoenix.com/digital-marketing-agency-india)
-- [Website Design & Social Media Agency – Canada](https://revenuephoenix.com/digital-marketing-agency-canada)
-- [Website Design & Social Media Agency – UAE](https://revenuephoenix.com/digital-marketing-agency-uae)
-- [Website Design & Social Media Agency – USA](https://revenuephoenix.com/digital-marketing-agency-usa)
-- [Website Design & Social Media Agency – Australia](https://revenuephoenix.com/digital-marketing-agency-australia)
+- [Website Design & Social Media Agency - India](https://revenuephoenix.com/digital-marketing-agency-india)
+- [Website Design & Social Media Agency - Canada](https://revenuephoenix.com/digital-marketing-agency-canada)
+- [Website Design & Social Media Agency - UAE](https://revenuephoenix.com/digital-marketing-agency-uae)
+- [Website Design & Social Media Agency - USA](https://revenuephoenix.com/digital-marketing-agency-usa)
+- [Website Design & Social Media Agency - Australia](https://revenuephoenix.com/digital-marketing-agency-australia)
 
 ## Policies
 - [Privacy Policy](https://revenuephoenix.com/privacy)
 - [Terms of Service](https://revenuephoenix.com/terms)
 - [Refund Policy](https://revenuephoenix.com/refund)
+
+## Services
+- [Website design](https://revenuephoenix.com/services/website-design): Fast, mobile-first website design for Indian and global brands. Free demo within 24 hours, clean code, built-in basic SEO, founder-led team. Book a free call.
+- [Shopify development](https://revenuephoenix.com/services/shopify-development): Shopify store design, custom Liquid development, migration and Plus builds for D2C brands in India, USA, UAE, Canada and Australia. Packages from $800.
+- [Meta Ads management](https://revenuephoenix.com/services/meta-ads): Performance-focused Meta (Facebook and Instagram) Ads management for D2C, local and service businesses. 1M+ ad spend managed. Clear reporting, no lock-in.
+- [Social media management](https://revenuephoenix.com/services/social-media-management): End to end Instagram and social media management for Indian and global brands: strategy, content, reels, posting and monthly reporting. Founder-led, no lock-in.
+- [SEO](https://revenuephoenix.com/services/seo): Practical SEO for Shopify stores and business websites: technical fixes, on-page optimisation, local and city pages, content and schema. Clear monthly roadmap.
+- [Brand strategy](https://revenuephoenix.com/services/brand-strategy): Brand strategy, positioning, voice and visual identity for D2C and service brands. Starts at $500. Clear direction before design and development.
+
+## Cities in India
+- [Digital marketing agency in Agra](https://revenuephoenix.com/digital-marketing-agency-agra): Website design, Shopify, Meta Ads and social media for Agra businesses.
+- [Digital marketing agency in Delhi NCR](https://revenuephoenix.com/digital-marketing-agency-delhi-ncr): Website design, Shopify, Meta Ads and social media for Delhi NCR businesses.
+- [Digital marketing agency in Mumbai](https://revenuephoenix.com/digital-marketing-agency-mumbai): Website design, Shopify, Meta Ads and social media for Mumbai businesses.
+- [Digital marketing agency in Pune](https://revenuephoenix.com/digital-marketing-agency-pune): Website design, Shopify, Meta Ads and social media for Pune businesses.
+- [Digital marketing agency in Bengaluru](https://revenuephoenix.com/digital-marketing-agency-bengaluru): Website design, Shopify, Meta Ads and social media for Bengaluru businesses.
+- [Digital marketing agency in Hyderabad](https://revenuephoenix.com/digital-marketing-agency-hyderabad): Website design, Shopify, Meta Ads and social media for Hyderabad businesses.
+- [Digital marketing agency in Chennai](https://revenuephoenix.com/digital-marketing-agency-chennai): Website design, Shopify, Meta Ads and social media for Chennai businesses.
+- [Digital marketing agency in Kolkata](https://revenuephoenix.com/digital-marketing-agency-kolkata): Website design, Shopify, Meta Ads and social media for Kolkata businesses.
+- [Digital marketing agency in Ahmedabad](https://revenuephoenix.com/digital-marketing-agency-ahmedabad): Website design, Shopify, Meta Ads and social media for Ahmedabad businesses.
+- [Digital marketing agency in Jaipur](https://revenuephoenix.com/digital-marketing-agency-jaipur): Website design, Shopify, Meta Ads and social media for Jaipur businesses.
+- [Digital marketing agency in Lucknow](https://revenuephoenix.com/digital-marketing-agency-lucknow): Website design, Shopify, Meta Ads and social media for Lucknow businesses.
+- [Digital marketing agency in Chandigarh](https://revenuephoenix.com/digital-marketing-agency-chandigarh): Website design, Shopify, Meta Ads and social media for Chandigarh businesses.

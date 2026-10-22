@@ -2,308 +2,347 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://revenuephoenix.com/</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-22</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/about</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/portfolio</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://revenuephoenix.com/blog</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/shopify-seo-checklist</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-agra</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/shopify-store-cost</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-ahmedabad</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/shopify-traffic-no-sales</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-australia</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/freelancer-vs-agency</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-bengaluru</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/shopify-homepage-mistakes</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-canada</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-chandigarh</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-chennai</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-delhi-ncr</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-hyderabad</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-india</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-jaipur</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-kolkata</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-lucknow</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-mumbai</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-pune</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-uae</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/digital-marketing-agency-usa</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/services/brand-strategy</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/services/meta-ads</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/services/seo</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/services/shopify-development</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/services/social-media-management</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/services/website-design</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/brand-identity-design-ecommerce</loc>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://revenuephoenix.com/blog/brand-voice-vs-logo</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/dtc-email-sequence</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/product-page-anatomy</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/hire-agencies-for-outcomes</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://revenuephoenix.com/blog/coffee-brand-case-study</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/digital-marketing-agency-india</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/digital-marketing-agency-canada</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/digital-marketing-agency-uae</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/digital-marketing-agency-usa</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/digital-marketing-agency-australia</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/privacy</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/refund</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/terms</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/contact</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/shopify-store-cost-india</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://revenuephoenix.com/blog/conversion-rate-optimization-agency</loc>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/social-media-management-pricing-india</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://revenuephoenix.com/blog/dtc-email-sequence</loc>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/shopify-agency-canada-small-brands</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://revenuephoenix.com/blog/ecommerce-email-marketing-agency</loc>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/social-media-management-pricing-canada</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://revenuephoenix.com/blog/freelancer-vs-agency</loc>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/website-development-dubai-real-estate</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://revenuephoenix.com/blog/furrishta-shopify-case-study</loc>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/shopify-social-media-cost-uae</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://revenuephoenix.com/blog/hire-agencies-for-outcomes</loc>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/shopify-agency-us-dtc-startups</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://revenuephoenix.com/blog/instagram-growth-agency</loc>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/social-media-management-us-small-brands</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://revenuephoenix.com/blog/meta-ads-management-shopify</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/milith-pharma-case-study</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/product-page-anatomy</loc>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://revenuephoenix.com/blog/shopify-agency-australian-small-business</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-agency-canada-small-brands</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-agency-us-dtc-startups</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-homepage-mistakes</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-migration-services</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-plus-development-agency</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-seo-checklist</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-seo-services</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-social-media-cost-uae</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-store-audit</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-store-cost</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-store-cost-india</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-traffic-no-sales</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/shopify-website-development-company</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/small-business-website-design-agency</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/social-media-management-packages</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/social-media-management-pricing-canada</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/social-media-management-pricing-india</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/social-media-management-us-small-brands</loc>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://revenuephoenix.com/blog/social-media-marketing-pricing-australia</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/blog/somara-realty-case-study</loc>
+    <lastmod>2026-10-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://revenuephoenix.com/blog/swati-pearls-jewellers-shopify-case-study</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/furrishta-shopify-case-study</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/somara-realty-case-study</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/milith-pharma-case-study</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/shopify-website-development-company</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/social-media-management-packages</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/brand-identity-design-ecommerce</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/meta-ads-management-shopify</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/shopify-seo-services</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/shopify-store-audit</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/conversion-rate-optimization-agency</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <loc>https://revenuephoenix.com/blog/website-development-dubai-real-estate</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://revenuephoenix.com/blog/whatsapp-marketing-agency</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://revenuephoenix.com/blog/shopify-migration-services</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/instagram-growth-agency</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/small-business-website-design-agency</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/ecommerce-email-marketing-agency</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://revenuephoenix.com/blog/shopify-plus-development-agency</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <loc>https://revenuephoenix.com/about</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://revenuephoenix.com/book-your-slot</loc>
     <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/contact</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/portfolio</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/privacy</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/refund</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://revenuephoenix.com/terms</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>

@@ -133,6 +133,58 @@
     }
   })();
 
+
+  /* ---------- reels: autoplay in view, click opens that reel only ---------- */
+  (function(){
+    var reels=document.querySelectorAll('.reel[data-video]');
+    var vids=[];
+    reels.forEach(function(r){var v=r.querySelector('video');if(v)vids.push(v)});
+    if(vids.length&&'IntersectionObserver' in window&&!REDUCE){
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){
+        var v=e.target;
+        if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){})}else{v.pause()}
+      })},{threshold:.45});
+      vids.forEach(function(v){io.observe(v)});
+    }
+    var modal=null,lastFocus=null;
+    function build(){
+      modal=document.createElement('div');modal.className='rmodal';modal.hidden=true;
+      modal.setAttribute('role','dialog');modal.setAttribute('aria-modal','true');modal.setAttribute('aria-label','Reel player');
+      modal.innerHTML='<div class="rm-bg" data-rm="x"></div><div class="rm-box"><button type="button" class="rm-x" data-rm="x" aria-label="Close reel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><div class="rm-stage"></div><a class="rm-ig btn line" target="_blank" rel="noopener" href="#">Open on Instagram</a></div>';
+      document.body.appendChild(modal);
+      modal.addEventListener('click',function(e){if(e.target.closest('[data-rm="x"]'))close()});
+    }
+    function close(){
+      if(!modal||modal.hidden)return;
+      modal.hidden=true;document.documentElement.classList.remove('rm-open');
+      modal.querySelector('.rm-stage').innerHTML='';
+      if(lastFocus&&lastFocus.focus)lastFocus.focus();
+    }
+    function open(r){
+      if(!modal)build();
+      lastFocus=r;
+      var st=modal.querySelector('.rm-stage'),v=r.getAttribute('data-video'),ig=r.getAttribute('data-ig'),poster=(r.querySelector('img')||{}).src||'';
+      st.innerHTML='';
+      if(v){
+        var el=document.createElement('video');el.src=v;el.controls=true;el.autoplay=true;el.loop=true;el.playsInline=true;
+        if(poster)el.poster=poster;st.appendChild(el);
+        var p=el.play();if(p&&p.catch)p.catch(function(){});
+      }else if(ig){
+        var f=document.createElement('iframe');f.src=ig.replace(/\/?$/,'/')+'embed';f.setAttribute('allowfullscreen','');f.setAttribute('allow','autoplay; encrypted-media');f.title='Instagram reel';st.appendChild(f);
+      }
+      modal.querySelector('.rm-ig').href=ig||r.getAttribute('href');
+      modal.hidden=false;document.documentElement.classList.add('rm-open');
+      modal.querySelector('.rm-x').focus();
+    }
+    document.addEventListener('click',function(e){
+      var r=e.target.closest&&e.target.closest('.reel[data-video],.reel[data-ig]');
+      if(!r)return;
+      if(e.metaKey||e.ctrlKey||e.shiftKey||e.button===1)return;
+      e.preventDefault();open(r);
+    });
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+  })();
+
   /* ---------- cursor + spark bursts ---------- */
   (function(){
     var fine=false;try{fine=window.matchMedia('(hover: hover) and (pointer: fine)').matches}catch(e){}
